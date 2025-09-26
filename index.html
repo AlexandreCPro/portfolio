@@ -1,9 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <title>Mon portfolio</title>
+        <meta charset="UTF-8">
+        <title>Accueil</title>
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+                body {
+                    background-color: #1E1E1E;
+                    font-family: 'Inter', 'Lato', sans-serif;
+                }
+                .nav-rectangle {
+                    border: 2px solid #8AA4C5;
+                    border-radius: 16px;
+                    background: rgba(138, 164, 197, 0.08);
+                    padding: 18px 24px;
+                    width: fit-content;
+                    margin: 24px 0 16px 0;
+                    display: flex;
+                    gap: 10px;
+                }
+                .fond-haut {
+                    height: 50vh;
+                    width: 100vw;
+                    background: url('IMG/Imagefondnoir.jpg') center/cover no-repeat;
+                }
+                .fond-bas {
+                    min-height: 50vh;
+                    width: 100vw;
+                    background: url('IMG/Imagefondblanc.jpg') center/cover no-repeat;
+                }
+            </style>
     </head>
     <body>
-        <h1>Bonjour Github !</h1>
+        <div class="fond-haut">
+            <!--NAVBAR-->
+            <div class="nav-rectangle">
+                <nav style="display: flex; gap: 10px;">
+                    <a href="index.html" class="active" style="color: white; margin-right: 15px;">Accueil</a>
+                    <a href="projet.html" style="color: white; margin-right: 15px;">Projet</a>
+                    <a href="stage.html" style="color: white; margin-right: 15px;">Stage</a>
+                    <a href="veilleinfo.html" style="color: white; margin-right: 15px;">Veille info</a>
+                    <a href="contact.html" style="color: white; margin-right: 15px;">Contact</a>
+                </nav>
+            </div>
+            <hr>
+            <h1 style="color: white;"> Alexandre COUBERES</h1>
+            <h1 style="color: white;"> BTS Services Informatiques aux Organisations</h1>
+            <p style="color: white;"> Ceci est mon premier paragraphe en HTML</p>
+        </div>
+        <div class="fond-bas">
+            <hr>
+            <h2 style="color: white;">Mes compétences :</h2>
+            <ul>
+                <li style="color: white;">HTML</li>
+                <li style="color: white;">CSS</li>
+                <li style="color: white;">Python</li>
+            </ul>
+            <img src="IMG/photodeprofil.jpg" height="100" alt="Photo de profil">
+            <div style="position: relative; width: fit-content; margin: 0 auto;">
+                <img src="IMG/CV.jpg" height="400" alt="CV">
+                <a href="CV/CV.pdf" target="_blank">
+                    <button style="position: absolute; left: 50%; transform: translateX(-50%); bottom: -50px; background: linear-gradient(90deg, #8AA4C5, #D250E6); color: white; border: none; padding: 12px 40px; border-radius: 4px; font-size: 12px; font-family: 'Lato', sans-serif; font-weight: bold; cursor: pointer;">Mon CV</button>
+                </a>
+            </div>
+        <footer> 
+            <p style="color: black;">© 2025 - Mon portfolio</p>
+        </footer>
+        </div>
     </body>
 </html>
